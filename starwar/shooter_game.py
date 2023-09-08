@@ -77,7 +77,7 @@ class Stone(GameSprite):
             self.rect.x = random.randint(50, 600)
 
 
-#  lose    
+  lose    
 
 hero = Player('rocket.png', 300, 400, 10, 80,100)
 stones = sprite.Group()
@@ -179,12 +179,13 @@ while game:
         if is_duo:
             hero2.reset()
             hero2.update_2()
-
-        ufos.draw(window)
-        ufos.update()
+        
+        
         bullets.draw(window)
         bullets.update()
         stones.draw(window)
         stones.update()
         display.update()
         clock.tick(40)
+        ufos.draw(window)
+        ufos.update()
