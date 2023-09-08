@@ -27,7 +27,7 @@ class GameSprite(sprite.Sprite):
     def reset(self):
         window.blit(self.image, (self.rect.x, self.rect.y))
 
-
+print(1)
 class Player(GameSprite):
     def update(self):
         pressed = key.get_pressed()
